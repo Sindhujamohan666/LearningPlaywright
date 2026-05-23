@@ -1,0 +1,5 @@
+{
+  "clicked": "📶\nWi-Fi",
+  "testId": "test-id-Wifi",
+  "at": "4:54:41 PM"
+}

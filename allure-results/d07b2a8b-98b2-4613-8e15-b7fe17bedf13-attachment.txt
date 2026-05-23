@@ -1,0 +1,13 @@
+[
+  locator('div[aria-label=\'Add-ons submenu\'] >a').first(),
+  locator('div[aria-label=\'Add-ons submenu\'] >a').nth(1),
+  locator('div[aria-label=\'Add-ons submenu\'] >a').nth(2),
+  locator('div[aria-label=\'Add-ons submenu\'] >a').nth(3),
+  locator('div[aria-label=\'Add-ons submenu\'] >a').nth(4),
+  locator('div[aria-label=\'Add-ons submenu\'] >a').nth(5)
+]
+{
+  "clicked": "📶\nWi-Fi",
+  "testId": "test-id-Wifi",
+  "at": "5:11:53 PM"
+}

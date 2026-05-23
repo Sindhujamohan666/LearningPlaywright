@@ -1,0 +1,17 @@
+{
+  "firstName": "Sindhuja",
+  "lastName": "Mohanasundaram",
+  "gender": "Female",
+  "yearsExperience": "5",
+  "date": "",
+  "profession": "Automation Tester",
+  "tools": [
+    "UFT",
+    "Selenium Webdriver"
+  ],
+  "continents": [
+    "Asia",
+    "Australia"
+  ],
+  "upload": {}
+}

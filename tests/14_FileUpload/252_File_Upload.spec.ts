@@ -1,0 +1,29 @@
+import { test, expect, Locator } from '@playwright/test';
+import path from 'path'; //This shows error but works.
+
+const URL = 'https://the-internet.herokuapp.com/upload'; // replace with target page
+
+test.describe('FileUpload handling', () => {
+
+    test.beforeEach(async ({ page }) => {
+        await page.goto(URL);
+    });
+
+    test('locate FileUpload and upload', async ({ page }) => {
+
+        const filePath = path.join(__dirname, 'testdata.txt');////This shows error but works.
+        console.log('File path:', filePath);
+
+        await page.locator("#file-upload").setInputFiles([filePath]);
+
+        await page.getByRole("button", { name: "Upload" }).click();
+
+        await expect(page.locator('#uploaded-files')).toContainText('testdata.txt');
+
+        await page.waitForTimeout(15000);
+
+    });
+
+
+
+});

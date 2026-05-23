@@ -1,0 +1,370 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Tasks\WebTableSearch.spec.ts >> Verify if Kabir is present
+- Location: tests\Tasks\WebTableSearch.spec.ts:3:5
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "Kabir.Khan"
+Received: Promise {}
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - 'region "Announcement: AI Tester Blueprint new batch" [ref=e2]':
+    - generic [ref=e3]: LIVE
+    - generic [ref=e5]: AI Tester Blueprint
+    - generic [ref=e6]: New batch
+    - generic [ref=e7]: "|"
+    - generic [ref=e8]: 23 May 2026 · 11:00 AM IST
+    - generic [ref=e9]: "|"
+    - generic [ref=e10]:
+      - text: ₹35,000₹9,999
+      - emphasis [ref=e11]: 33% OFF
+    - generic [ref=e12]:
+      - text: Code
+      - code [ref=e13]: AITESTER
+    - link "Join" [ref=e14] [cursor=pointer]:
+      - /url: https://bit.ly/aitester2026
+    - link "Chat on WhatsApp" [ref=e15] [cursor=pointer]:
+      - /url: https://sdet.live/WhatsApp
+      - text: ☎
+    - button "Dismiss banner" [ref=e16] [cursor=pointer]: ×
+  - generic [ref=e17]:
+    - complementary "Practice navigation" [ref=e18]:
+      - generic [ref=e19]:
+        - link "T The Testing Academy" [ref=e20] [cursor=pointer]:
+          - /url: ./index.html
+          - generic [ref=e21]: T
+          - strong [ref=e23]: The Testing Academy
+        - button "Toggle sidebar" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+      - generic [ref=e28]:
+        - img [ref=e29]
+        - searchbox / [ref=e32]
+        - generic [ref=e33]: /
+      - navigation [ref=e34]:
+        - generic [ref=e35]:
+          - button "Get started" [expanded] [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+            - generic [ref=e39]: Get started
+            - img [ref=e40]
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Overview" [ref=e44] [cursor=pointer]:
+                - /url: ./index.html
+                - img [ref=e46]
+                - generic [ref=e49]: Overview
+        - generic [ref=e50]:
+          - button "Tools" [expanded] [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+            - generic [ref=e54]: Tools
+            - img [ref=e55]
+          - list [ref=e57]:
+            - listitem [ref=e58]:
+              - link "SnapLocator (Chrome ext)" [ref=e59] [cursor=pointer]:
+                - /url: ./snaplocator.html
+                - generic [ref=e61]: SnapLocator (Chrome ext)
+        - generic [ref=e62]:
+          - button "Selectors & Locators" [expanded] [ref=e63] [cursor=pointer]:
+            - img [ref=e64]
+            - generic [ref=e66]: Selectors & Locators
+            - img [ref=e67]
+          - list [ref=e69]:
+            - listitem [ref=e70]:
+              - link "Multiple Element Filter" [ref=e71] [cursor=pointer]:
+                - /url: ./multiple_element_filter.html
+                - img [ref=e73]
+                - generic [ref=e76]: Multiple Element Filter
+            - listitem [ref=e77]:
+              - link "Web Table Directory" [ref=e78] [cursor=pointer]:
+                - /url: ./webtable.html
+                - img [ref=e80]
+                - generic [ref=e85]: Web Table Directory
+        - generic [ref=e86]:
+          - button "Tables & Forms" [expanded] [ref=e87] [cursor=pointer]:
+            - img [ref=e88]
+            - generic [ref=e91]: Tables & Forms
+            - img [ref=e92]
+          - list [ref=e94]:
+            - listitem [ref=e95]:
+              - link "QA Profile Form" [ref=e96] [cursor=pointer]:
+                - /url: ./tables/practice.html
+                - img [ref=e98]
+                - generic [ref=e101]: QA Profile Form
+            - listitem [ref=e102]:
+              - link "Companies Table" [ref=e103] [cursor=pointer]:
+                - /url: ./tables/webtable.html
+                - img [ref=e105]
+                - generic [ref=e108]: Companies Table
+            - listitem [ref=e109]:
+              - link "Tall Buildings Table" [ref=e110] [cursor=pointer]:
+                - /url: ./tables/webtable1.html
+                - img [ref=e112]
+                - generic [ref=e114]: Tall Buildings Table
+            - listitem [ref=e115]:
+              - link "Custom Dropdowns" [ref=e116] [cursor=pointer]:
+                - /url: ./tables/dropdowns.html
+                - img [ref=e118]
+                - generic [ref=e121]: Custom Dropdowns
+            - listitem [ref=e122]:
+              - link "Select Box Variants" [ref=e123] [cursor=pointer]:
+                - /url: ./tables/select-boxes.html
+                - img [ref=e125]
+                - generic [ref=e128]: Select Box Variants
+            - listitem [ref=e129]:
+              - link "Sortable Admin Table" [ref=e130] [cursor=pointer]:
+                - /url: ./tables/sortable.html
+                - generic [ref=e132]: Sortable Admin Table
+            - listitem [ref=e133]:
+              - link "Cricket Scorecard" [ref=e134] [cursor=pointer]:
+                - /url: ./tables/scorecard.html
+                - generic [ref=e136]: Cricket Scorecard
+        - generic [ref=e137]:
+          - button "Frames" [expanded] [ref=e138] [cursor=pointer]:
+            - img [ref=e139]
+            - generic [ref=e144]: Frames
+            - img [ref=e145]
+          - list [ref=e147]:
+            - listitem [ref=e148]:
+              - link "Frames overview" [ref=e149] [cursor=pointer]:
+                - /url: ./frames/index.html
+                - img [ref=e151]
+                - generic [ref=e153]: Frames overview
+            - listitem [ref=e154]:
+              - link "Multi-frame frameset" [ref=e155] [cursor=pointer]:
+                - /url: ./frames/multi-frames.html
+                - img [ref=e157]
+                - generic [ref=e162]: Multi-frame frameset
+            - listitem [ref=e163]:
+              - link "Nested iframes" [ref=e164] [cursor=pointer]:
+                - /url: ./frames/nested-iframes.html
+                - img [ref=e166]
+                - generic [ref=e170]: Nested iframes
+            - listitem [ref=e171]:
+              - link "Courses frameset" [ref=e172] [cursor=pointer]:
+                - /url: ./frames/courses-frameset.html
+                - generic [ref=e174]: Courses frameset
+        - generic [ref=e175]:
+          - button "Widgets" [expanded] [ref=e176] [cursor=pointer]:
+            - img [ref=e177]
+            - generic [ref=e180]: Widgets
+            - img [ref=e181]
+          - list [ref=e183]:
+            - listitem [ref=e184]:
+              - link "SVG locators" [ref=e185] [cursor=pointer]:
+                - /url: ./widgets/svg.html
+                - generic [ref=e187]: SVG locators
+            - listitem [ref=e188]:
+              - link "Shadow DOM" [ref=e189] [cursor=pointer]:
+                - /url: ./widgets/shadow-dom.html
+                - generic [ref=e191]: Shadow DOM
+            - listitem [ref=e192]:
+              - link "Calendar / date picker" [ref=e193] [cursor=pointer]:
+                - /url: ./widgets/calendar.html
+                - generic [ref=e195]: Calendar / date picker
+            - listitem [ref=e196]:
+              - link "Drag & drop Kanban" [ref=e197] [cursor=pointer]:
+                - /url: ./widgets/dnd.html
+                - generic [ref=e199]: Drag & drop Kanban
+            - listitem [ref=e200]:
+              - link "Toasts & notifications" [ref=e201] [cursor=pointer]:
+                - /url: ./widgets/toasts.html
+                - generic [ref=e203]: Toasts & notifications
+            - listitem [ref=e204]:
+              - link "Native dialogs" [ref=e205] [cursor=pointer]:
+                - /url: ./widgets/dialogs.html
+                - generic [ref=e207]: Native dialogs
+            - listitem [ref=e208]:
+              - link "Hover menus" [ref=e209] [cursor=pointer]:
+                - /url: ./widgets/hover-menu.html
+                - generic [ref=e211]: Hover menus
+            - listitem [ref=e212]:
+              - link "Right-click menu" [ref=e213] [cursor=pointer]:
+                - /url: ./widgets/context-menu.html
+                - generic [ref=e215]: Right-click menu
+            - listitem [ref=e216]:
+              - link "Keyboard navigation" [ref=e217] [cursor=pointer]:
+                - /url: ./widgets/keyboard-form.html
+                - generic [ref=e219]: Keyboard navigation
+            - listitem [ref=e220]:
+              - link "Windows & Tabs" [ref=e221] [cursor=pointer]:
+                - /url: ./widgets/windows-tabs.html
+                - img [ref=e223]
+                - generic [ref=e225]: Windows & Tabs
+            - listitem [ref=e226]:
+              - link "Upload & Download" [ref=e227] [cursor=pointer]:
+                - /url: ./widgets/upload-download.html
+                - img [ref=e229]
+                - generic [ref=e232]: Upload & Download
+            - listitem [ref=e233]:
+              - link "Scroll" [ref=e234] [cursor=pointer]:
+                - /url: ./widgets/scroll.html
+                - generic [ref=e236]: Scroll
+            - listitem [ref=e237]:
+              - link "Assertions (expect)" [ref=e238] [cursor=pointer]:
+                - /url: ./widgets/expect.html
+                - generic [ref=e240]: Assertions (expect)
+            - listitem [ref=e241]:
+              - link "Test modifiers · hooks · data" [ref=e242] [cursor=pointer]:
+                - /url: ./widgets/test-modifiers.html
+                - generic [ref=e244]: Test modifiers · hooks · data
+            - listitem [ref=e245]:
+              - link "Data-driven + POM" [ref=e246] [cursor=pointer]:
+                - /url: ./widgets/data-driven.html
+                - generic [ref=e248]: Data-driven + POM
+            - listitem [ref=e249]:
+              - link "JavaScript notes" [ref=e250] [cursor=pointer]:
+                - /url: ./notes.html
+                - generic [ref=e252]: JavaScript notes
+        - generic [ref=e253]:
+          - button "Network" [expanded] [ref=e254] [cursor=pointer]:
+            - img [ref=e255]
+            - generic [ref=e258]: Network
+            - img [ref=e259]
+          - list [ref=e261]:
+            - listitem [ref=e262]:
+              - link "Network interception" [ref=e263] [cursor=pointer]:
+                - /url: ./network/intercept.html
+                - generic [ref=e265]: Network interception
+        - generic [ref=e266]:
+          - button "Coming next" [expanded] [ref=e267] [cursor=pointer]:
+            - img [ref=e268]
+            - generic [ref=e270]: Coming next
+            - img [ref=e271]
+          - list
+      - generic [ref=e273]:
+        - generic [ref=e274]: © The Testing Academy · 2026
+        - button "Toggle dark mode" [ref=e275] [cursor=pointer]:
+          - img [ref=e276]
+    - generic [ref=e278]:
+      - banner [ref=e279]:
+        - button "Open sidebar" [ref=e280] [cursor=pointer]:
+          - img [ref=e281]
+        - generic [ref=e283]:
+          - link "Practice" [ref=e284] [cursor=pointer]:
+            - /url: ./index.html
+          - img [ref=e285]
+          - strong [ref=e287]: Web Table Directory
+        - generic [ref=e288]:
+          - generic [ref=e289]: 10 rows
+          - button "Toggle dark mode" [ref=e290] [cursor=pointer]:
+            - img [ref=e291]
+            - img [ref=e293]
+      - main [ref=e296]:
+        - region "CloudOps India Employee Directory" [ref=e297]:
+          - generic [ref=e298]: Locator practice · Web table
+          - heading "CloudOps India Employee Directory" [level=1] [ref=e300]:
+            - text: CloudOps India
+            - emphasis [ref=e301]: Employee Directory
+          - paragraph [ref=e302]:
+            - text: A realistic employee table built for practising XPath sibling traversal, CSS
+            - code [ref=e303]: :has()
+            - text: ", checkbox selection, and extracting row data. The data is intentionally Indianised so the names feel familiar."
+          - generic [ref=e304]:
+            - generic [ref=e305]:
+              - strong [ref=e306]: "10"
+              - generic [ref=e307]: Employee rows
+            - generic [ref=e308]:
+              - strong [ref=e309]: "7"
+              - generic [ref=e310]: Visible columns
+            - generic [ref=e311]:
+              - strong [ref=e312]: "3"
+              - generic [ref=e313]: Selector patterns
+            - generic [ref=e314]:
+              - strong [ref=e315]: "0"
+              - generic [ref=e316]: External APIs
+        - region "Web table practice workspace" [ref=e317]:
+          - generic [ref=e318]:
+            - generic [ref=e319]:
+              - generic [ref=e320]:
+                - heading "CloudOps India Employee Directory" [level=2] [ref=e321]
+                - paragraph [ref=e322]: Use this table to practise locating rows, checkboxes, and sibling columns.
+              - generic [ref=e323]: Practice page
+            - generic "Table tools" [ref=e324]:
+              - searchbox "Search employee table" [ref=e325]: Kabir
+              - button "Select Cloud QA" [ref=e326] [cursor=pointer]
+              - button "Clear" [ref=e327] [cursor=pointer]
+            - table "Employee Management System table" [ref=e329]:
+              - rowgroup [ref=e330]:
+                - row "Select Username Employee Name User Role City Project Status" [ref=e331]:
+                  - columnheader "Select" [ref=e332]
+                  - columnheader "Username" [ref=e333]
+                  - columnheader "Employee Name" [ref=e334]
+                  - columnheader "User Role" [ref=e335]
+                  - columnheader "City" [ref=e336]
+                  - columnheader "Project" [ref=e337]
+                  - columnheader "Status" [ref=e338]
+              - rowgroup [ref=e339]:
+                - row "Select Kabir.Khan Kabir.Khan KK Kabir Khan EMP-1005 Security Tester Hyderabad Udaan Risk Active" [ref=e340]:
+                  - cell "Select Kabir.Khan" [ref=e341]:
+                    - checkbox "Select Kabir.Khan" [checked] [active] [ref=e342] [cursor=pointer]
+                  - cell "Kabir.Khan" [ref=e343]
+                  - cell "KK Kabir Khan EMP-1005" [ref=e344]:
+                    - generic [ref=e345]:
+                      - generic [ref=e346]: KK
+                      - generic [ref=e347]:
+                        - strong [ref=e348]: Kabir Khan
+                        - generic [ref=e349]: EMP-1005
+                  - cell "Security Tester" [ref=e350]
+                  - cell "Hyderabad" [ref=e351]
+                  - cell "Udaan Risk" [ref=e352]
+                  - cell "Active" [ref=e353]:
+                    - generic [ref=e354]: Active
+            - generic [ref=e355]:
+              - generic [ref=e356]:
+                - generic [ref=e357]: 1 visible rows
+                - generic [ref=e358]: 1 selected
+              - generic [ref=e359]: Kabir.Khan
+          - complementary "Lesson and solution" [ref=e360]:
+            - generic [ref=e361]:
+              - heading "What students should practise" [level=2] [ref=e362]
+              - paragraph [ref=e363]: The page is the problem. Try these on your own first — the solution stays hidden until you reveal it.
+              - list [ref=e364]:
+                - listitem [ref=e365]: Click the checkbox beside a username using XPath preceding-sibling.
+                - listitem [ref=e366]:
+                  - text: Find a complete row using CSS
+                  - code [ref=e367]: tr:has(td:text(...))
+                  - text: .
+                - listitem [ref=e368]: Read all the data after a username using following-sibling columns.
+                - listitem [ref=e369]: Filter rows by team, city, role, or status without relying on hardcoded row numbers.
+            - group [ref=e370]:
+              - generic "Playwright solution Try the practice first — reveal the snippet only when you need a hint. Show solution" [ref=e371] [cursor=pointer]:
+                - img [ref=e373]
+                - generic [ref=e375]:
+                  - strong [ref=e376]: Playwright solution
+                  - generic [ref=e377]: Try the practice first — reveal the snippet only when you need a hint.
+                - generic [ref=e378]: Show solution
+```
+
+# Test source
+
+```ts
+  1  | import{test,expect} from '@playwright/test';
+  2  | 
+  3  | test('Verify if Kabir is present',async({page})=>{
+  4  |     await page.goto(' https://app.thetestingacademy.com/playwright/webtable');
+  5  |     //Search kabir in searchbox(aria-label-->getByLabel)
+  6  |     await page.getByLabel('Search employee table').fill('Kabir');
+  7  |     //Fetching td data
+  8  |     const col=await page.locator('td:has-text("Kabir khan")').isVisible();
+  9  |     //check kabir khan checkbox
+  10 |     await page.getByLabel('Select Kabir.Khan').check();
+  11 |     //validate Kabir.Khan in output field
+> 12 |     await expect(page.locator('#selected-output').innerText()).toBe('Kabir.Khan');
+     |                                                                ^ Error: expect(received).toBe(expected) // Object.is equality
+  13 | 
+  14 |     await page.waitForTimeout(5000);
+  15 | });
+```

@@ -1,0 +1,586 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: 20_Data_Driven_Testing_FakerJS\270_DDT_FakerJS3.spec.ts >> Register single user via generateUser()
+- Location: tests\20_Data_Driven_Testing_FakerJS\270_DDT_FakerJS3.spec.ts:15:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.fill: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - 'region "Announcement: AI Tester Blueprint new batch" [ref=e2]':
+    - generic [ref=e3]: LIVE
+    - generic [ref=e5]: AI Tester Blueprint
+    - generic [ref=e6]: New batch
+    - generic [ref=e7]: "|"
+    - generic [ref=e8]: 23 May 2026 · 11:00 AM IST
+    - generic [ref=e9]: "|"
+    - generic [ref=e10]:
+      - text: ₹35,000₹9,999
+      - emphasis [ref=e11]: 33% OFF
+    - generic [ref=e12]:
+      - text: Code
+      - code [ref=e13]: AITESTER
+    - link "Join" [ref=e14] [cursor=pointer]:
+      - /url: https://bit.ly/aitester2026
+    - link "Chat on WhatsApp" [ref=e15] [cursor=pointer]:
+      - /url: https://sdet.live/WhatsApp
+      - text: ☎
+    - button "Dismiss banner" [ref=e16] [cursor=pointer]: ×
+  - generic [ref=e17]:
+    - complementary "Practice navigation" [ref=e18]:
+      - generic [ref=e19]:
+        - link "T The Testing Academy" [ref=e20] [cursor=pointer]:
+          - /url: ../index.html
+          - generic [ref=e21]: T
+          - strong [ref=e23]: The Testing Academy
+        - button "Toggle sidebar" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+      - generic [ref=e28]:
+        - img [ref=e29]
+        - searchbox / [ref=e32]
+        - generic [ref=e33]: /
+      - navigation [ref=e34]:
+        - generic [ref=e35]:
+          - button "Get started" [expanded] [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+            - generic [ref=e39]: Get started
+            - img [ref=e40]
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Overview" [ref=e44] [cursor=pointer]:
+                - /url: ../index.html
+                - img [ref=e46]
+                - generic [ref=e49]: Overview
+        - generic [ref=e50]:
+          - button "Tools" [expanded] [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+            - generic [ref=e54]: Tools
+            - img [ref=e55]
+          - list [ref=e57]:
+            - listitem [ref=e58]:
+              - link "SnapLocator (Chrome ext)" [ref=e59] [cursor=pointer]:
+                - /url: ../snaplocator.html
+                - img [ref=e61]
+                - generic [ref=e64]: SnapLocator (Chrome ext)
+        - generic [ref=e65]:
+          - button "Selectors & Locators" [expanded] [ref=e66] [cursor=pointer]:
+            - img [ref=e67]
+            - generic [ref=e69]: Selectors & Locators
+            - img [ref=e70]
+          - list [ref=e72]:
+            - listitem [ref=e73]:
+              - link "Multiple Element Filter" [ref=e74] [cursor=pointer]:
+                - /url: ../multiple_element_filter.html
+                - img [ref=e76]
+                - generic [ref=e79]: Multiple Element Filter
+            - listitem [ref=e80]:
+              - link "Web Table Directory" [ref=e81] [cursor=pointer]:
+                - /url: ../webtable.html
+                - img [ref=e83]
+                - generic [ref=e88]: Web Table Directory
+        - generic [ref=e89]:
+          - button "Tables & Forms" [expanded] [ref=e90] [cursor=pointer]:
+            - img [ref=e91]
+            - generic [ref=e94]: Tables & Forms
+            - img [ref=e95]
+          - list [ref=e97]:
+            - listitem [ref=e98]:
+              - link "QA Profile Form" [ref=e99] [cursor=pointer]:
+                - /url: ./practice.html
+                - img [ref=e101]
+                - generic [ref=e104]: QA Profile Form
+            - listitem [ref=e105]:
+              - link "Companies Table" [ref=e106] [cursor=pointer]:
+                - /url: ./webtable.html
+                - img [ref=e108]
+                - generic [ref=e111]: Companies Table
+            - listitem [ref=e112]:
+              - link "Tall Buildings Table" [ref=e113] [cursor=pointer]:
+                - /url: ./webtable1.html
+                - img [ref=e115]
+                - generic [ref=e117]: Tall Buildings Table
+            - listitem [ref=e118]:
+              - link "Custom Dropdowns" [ref=e119] [cursor=pointer]:
+                - /url: ./dropdowns.html
+                - img [ref=e121]
+                - generic [ref=e124]: Custom Dropdowns
+            - listitem [ref=e125]:
+              - link "Select Box Variants" [ref=e126] [cursor=pointer]:
+                - /url: ./select-boxes.html
+                - img [ref=e128]
+                - generic [ref=e131]: Select Box Variants
+            - listitem [ref=e132]:
+              - link "Sortable Admin Table" [ref=e133] [cursor=pointer]:
+                - /url: ./sortable.html
+                - img [ref=e135]
+                - generic [ref=e139]: Sortable Admin Table
+            - listitem [ref=e140]:
+              - link "Cricket Scorecard" [ref=e141] [cursor=pointer]:
+                - /url: ./scorecard.html
+                - img [ref=e143]
+                - generic [ref=e146]: Cricket Scorecard
+        - generic [ref=e147]:
+          - button "Frames" [expanded] [ref=e148] [cursor=pointer]:
+            - img [ref=e149]
+            - generic [ref=e154]: Frames
+            - img [ref=e155]
+          - list [ref=e157]:
+            - listitem [ref=e158]:
+              - link "Frames overview" [ref=e159] [cursor=pointer]:
+                - /url: ../frames/index.html
+                - img [ref=e161]
+                - generic [ref=e163]: Frames overview
+            - listitem [ref=e164]:
+              - link "Multi-frame frameset" [ref=e165] [cursor=pointer]:
+                - /url: ../frames/multi-frames.html
+                - img [ref=e167]
+                - generic [ref=e172]: Multi-frame frameset
+            - listitem [ref=e173]:
+              - link "Nested iframes" [ref=e174] [cursor=pointer]:
+                - /url: ../frames/nested-iframes.html
+                - img [ref=e176]
+                - generic [ref=e180]: Nested iframes
+            - listitem [ref=e181]:
+              - link "Courses frameset" [ref=e182] [cursor=pointer]:
+                - /url: ../frames/courses-frameset.html
+                - img [ref=e184]
+                - generic [ref=e186]: Courses frameset
+        - generic [ref=e187]:
+          - button "Widgets" [expanded] [ref=e188] [cursor=pointer]:
+            - img [ref=e189]
+            - generic [ref=e192]: Widgets
+            - img [ref=e193]
+          - list [ref=e195]:
+            - listitem [ref=e196]:
+              - link "SVG locators" [ref=e197] [cursor=pointer]:
+                - /url: ../widgets/svg.html
+                - img [ref=e199]
+                - generic [ref=e203]: SVG locators
+            - listitem [ref=e204]:
+              - link "Shadow DOM" [ref=e205] [cursor=pointer]:
+                - /url: ../widgets/shadow-dom.html
+                - img [ref=e207]
+                - generic [ref=e209]: Shadow DOM
+            - listitem [ref=e210]:
+              - link "Calendar / date picker" [ref=e211] [cursor=pointer]:
+                - /url: ../widgets/calendar.html
+                - img [ref=e213]
+                - generic [ref=e215]: Calendar / date picker
+            - listitem [ref=e216]:
+              - link "Drag & drop Kanban" [ref=e217] [cursor=pointer]:
+                - /url: ../widgets/dnd.html
+                - img [ref=e219]
+                - generic [ref=e226]: Drag & drop Kanban
+            - listitem [ref=e227]:
+              - link "Toasts & notifications" [ref=e228] [cursor=pointer]:
+                - /url: ../widgets/toasts.html
+                - img [ref=e230]
+                - generic [ref=e233]: Toasts & notifications
+            - listitem [ref=e234]:
+              - link "Native dialogs" [ref=e235] [cursor=pointer]:
+                - /url: ../widgets/dialogs.html
+                - img [ref=e237]
+                - generic [ref=e239]: Native dialogs
+            - listitem [ref=e240]:
+              - link "Hover menus" [ref=e241] [cursor=pointer]:
+                - /url: ../widgets/hover-menu.html
+                - img [ref=e243]
+                - generic [ref=e245]: Hover menus
+            - listitem [ref=e246]:
+              - link "Right-click menu" [ref=e247] [cursor=pointer]:
+                - /url: ../widgets/context-menu.html
+                - img [ref=e249]
+                - generic [ref=e251]: Right-click menu
+            - listitem [ref=e252]:
+              - link "Keyboard navigation" [ref=e253] [cursor=pointer]:
+                - /url: ../widgets/keyboard-form.html
+                - img [ref=e255]
+                - generic [ref=e258]: Keyboard navigation
+            - listitem [ref=e259]:
+              - link "Windows & Tabs" [ref=e260] [cursor=pointer]:
+                - /url: ../widgets/windows-tabs.html
+                - img [ref=e262]
+                - generic [ref=e264]: Windows & Tabs
+            - listitem [ref=e265]:
+              - link "Upload & Download" [ref=e266] [cursor=pointer]:
+                - /url: ../widgets/upload-download.html
+                - img [ref=e268]
+                - generic [ref=e271]: Upload & Download
+            - listitem [ref=e272]:
+              - link "Scroll" [ref=e273] [cursor=pointer]:
+                - /url: ../widgets/scroll.html
+                - img [ref=e275]
+                - generic [ref=e278]: Scroll
+            - listitem [ref=e279]:
+              - link "Assertions (expect)" [ref=e280] [cursor=pointer]:
+                - /url: ../widgets/expect.html
+                - img [ref=e282]
+                - generic [ref=e284]: Assertions (expect)
+            - listitem [ref=e285]:
+              - link "Test modifiers · hooks · data" [ref=e286] [cursor=pointer]:
+                - /url: ../widgets/test-modifiers.html
+                - img [ref=e288]
+                - generic [ref=e293]: Test modifiers · hooks · data
+            - listitem [ref=e294]:
+              - link "Data-driven + POM" [ref=e295] [cursor=pointer]:
+                - /url: ../widgets/data-driven.html
+                - img [ref=e297]
+                - generic [ref=e301]: Data-driven + POM
+            - listitem [ref=e302]:
+              - link "JavaScript notes" [ref=e303] [cursor=pointer]:
+                - /url: ../notes.html
+                - generic [ref=e305]: JavaScript notes
+        - generic [ref=e306]:
+          - button "Network" [expanded] [ref=e307] [cursor=pointer]:
+            - img [ref=e308]
+            - generic [ref=e311]: Network
+            - img [ref=e312]
+          - list [ref=e314]:
+            - listitem [ref=e315]:
+              - link "Network interception" [ref=e316] [cursor=pointer]:
+                - /url: ../network/intercept.html
+                - img [ref=e318]
+                - generic [ref=e320]: Network interception
+        - generic [ref=e321]:
+          - button "Coming next" [expanded] [ref=e322] [cursor=pointer]:
+            - img [ref=e323]
+            - generic [ref=e325]: Coming next
+            - img [ref=e326]
+          - list
+        - generic [ref=e328]:
+          - button "Projects" [expanded] [ref=e329] [cursor=pointer]:
+            - img [ref=e330]
+            - generic [ref=e332]: Projects
+            - img [ref=e333]
+          - list [ref=e335]:
+            - listitem [ref=e336]:
+              - link "TTACart demo" [ref=e337] [cursor=pointer]:
+                - /url: ../ttacart/index.html
+                - img [ref=e339]
+                - generic [ref=e343]: TTACart demo
+            - listitem [ref=e344]:
+              - link "TTAStays booking" [ref=e345] [cursor=pointer]:
+                - /url: ../booking/index.html
+                - img [ref=e347]
+                - generic [ref=e350]: TTAStays booking
+            - listitem [ref=e351]:
+              - link "TTA AI Chat" [ref=e352] [cursor=pointer]:
+                - /url: ../ai-chat/index.html
+                - img [ref=e354]
+                - generic [ref=e359]: TTA AI Chat
+        - generic [ref=e360]:
+          - button "Frameworks" [expanded] [ref=e361] [cursor=pointer]:
+            - img [ref=e362]
+            - generic [ref=e365]: Frameworks
+            - img [ref=e366]
+          - list [ref=e368]:
+            - listitem [ref=e369]:
+              - link "Framework" [ref=e370] [cursor=pointer]:
+                - /url: ../advance-framework.html
+                - img [ref=e372]
+                - generic [ref=e375]: Framework
+            - listitem [ref=e376]:
+              - link "Framework + AI" [ref=e377] [cursor=pointer]:
+                - /url: ../advance-framework-ai.html
+                - img [ref=e379]
+                - generic [ref=e384]: Framework + AI
+      - generic [ref=e385]:
+        - generic [ref=e386]: © The Testing Academy · 2026
+        - button "Toggle dark mode" [ref=e387] [cursor=pointer]:
+          - img [ref=e388]
+    - generic [ref=e390]:
+      - banner [ref=e391]:
+        - button "Open sidebar" [ref=e392] [cursor=pointer]:
+          - img [ref=e393]
+        - generic [ref=e395]:
+          - link "Practice" [ref=e396] [cursor=pointer]:
+            - /url: ../index.html
+          - img [ref=e397]
+          - generic [ref=e399]: Tables
+          - img [ref=e400]
+          - strong [ref=e402]: QA Profile Form
+        - generic [ref=e403]:
+          - generic [ref=e404] [cursor=pointer]:
+            - checkbox "Locator markers" [checked] [ref=e405]
+            - generic [ref=e406]: Locator markers
+          - generic [ref=e407]: Form practice
+          - button "Toggle dark mode" [ref=e408] [cursor=pointer]:
+            - img [ref=e409]
+            - img [ref=e411]
+      - main [ref=e414]:
+        - region "QA Profile Form practice" [ref=e415]:
+          - generic [ref=e416]: Form practice · Inputs & widgets
+          - heading "QA Profile Form practice" [level=1] [ref=e418]:
+            - text: QA
+            - emphasis [ref=e419]: Profile Form
+            - text: practice
+          - paragraph [ref=e420]: "A focused form for practising every input type Playwright tests cover: text fields, radio groups, dropdowns, dates, checkboxes, tabs, file upload, and downloads. Build out your locator strategy before you reveal the solution."
+        - tablist "Page sections" [ref=e421]:
+          - tab "Page" [selected] [ref=e422] [cursor=pointer]
+          - tab "Practice 10" [ref=e423] [cursor=pointer]:
+            - text: Practice
+            - generic [ref=e424]: "10"
+          - tab "Solution" [ref=e425] [cursor=pointer]
+        - tabpanel "Page" [ref=e426]:
+          - generic [ref=e427]:
+            - generic [ref=e428]:
+              - heading "Personal information" [level=2] [ref=e429]
+              - generic [ref=e430]:
+                - generic [ref=e431]:
+                  - generic [ref=e432]: First name
+                  - textbox "First name" [ref=e433]:
+                    - /placeholder: Aarav
+                    - text: Shyann
+                  - generic [ref=e434]:
+                    - generic [ref=e435]:
+                      - generic [ref=e436]: id
+                      - text: =first-name
+                    - generic [ref=e437]:
+                      - generic [ref=e438]: name
+                      - text: =firstName
+                    - generic [ref=e439]:
+                      - generic [ref=e440]: data-testid
+                      - text: =first-name
+                - generic [ref=e441]:
+                  - generic [ref=e442]: Last name
+                  - textbox "Last name" [active] [ref=e443]:
+                    - /placeholder: Sharma
+                    - text: O'Kon
+                  - generic [ref=e444]:
+                    - generic [ref=e445]:
+                      - generic [ref=e446]: id
+                      - text: =last-name
+                    - generic [ref=e447]:
+                      - generic [ref=e448]: name
+                      - text: =lastName
+                    - generic [ref=e449]:
+                      - generic [ref=e450]: data-testid
+                      - text: =last-name
+              - generic [ref=e451]:
+                - generic [ref=e452]: Gender
+                - radiogroup "Gender" [ref=e453]:
+                  - generic [ref=e454] [cursor=pointer]:
+                    - radio "Male" [ref=e455]
+                    - text: Male
+                  - generic [ref=e456] [cursor=pointer]:
+                    - radio "Female" [ref=e457]
+                    - text: Female
+                - generic [ref=e458]:
+                  - generic [ref=e459]:
+                    - generic [ref=e460]: name
+                    - text: =gender
+                  - generic [ref=e461]:
+                    - generic [ref=e462]: data-testid
+                    - text: =gender-male / gender-female
+            - generic [ref=e463]:
+              - heading "Professional details" [level=2] [ref=e464]
+              - generic [ref=e465]:
+                - generic [ref=e466]:
+                  - generic [ref=e467]: Years of experience
+                  - combobox "Years of experience" [ref=e468]:
+                    - option "Select years" [selected]
+                    - option "1"
+                    - option "2"
+                    - option "3"
+                    - option "4"
+                    - option "5"
+                    - option "6"
+                    - option "7"
+                  - generic [ref=e469]:
+                    - generic [ref=e470]:
+                      - generic [ref=e471]: id
+                      - text: =years-experience
+                    - generic [ref=e472]:
+                      - generic [ref=e473]: name
+                      - text: =yearsExperience
+                    - generic [ref=e474]:
+                      - generic [ref=e475]: data-testid
+                      - text: =years-experience
+                - generic [ref=e476]:
+                  - generic [ref=e477]: Date
+                  - textbox "Date" [ref=e478]
+                  - generic [ref=e479]:
+                    - generic [ref=e480]:
+                      - generic [ref=e481]: id
+                      - text: =profile-date
+                    - generic [ref=e482]:
+                      - generic [ref=e483]: name
+                      - text: =date
+                    - generic [ref=e484]:
+                      - generic [ref=e485]: data-testid
+                      - text: =profile-date
+              - generic [ref=e486]:
+                - generic [ref=e487]: Profession
+                - radiogroup "Profession" [ref=e488]:
+                  - generic [ref=e489] [cursor=pointer]:
+                    - radio "Manual Tester" [ref=e490]
+                    - text: Manual Tester
+                  - generic [ref=e491] [cursor=pointer]:
+                    - radio "Automation Tester" [ref=e492]
+                    - text: Automation Tester
+                - generic [ref=e493]:
+                  - generic [ref=e494]:
+                    - generic [ref=e495]: name
+                    - text: =profession
+                  - generic [ref=e496]:
+                    - generic [ref=e497]: data-testid
+                    - text: =profession-manual / profession-automation
+            - generic [ref=e498]:
+              - heading "Technical skills" [level=2] [ref=e499]
+              - generic [ref=e500]:
+                - generic [ref=e501]: Automation tools
+                - generic "Automation tools" [ref=e502]:
+                  - generic [ref=e503] [cursor=pointer]:
+                    - checkbox "UFT" [ref=e504]
+                    - text: UFT
+                  - generic [ref=e505] [cursor=pointer]:
+                    - checkbox "Protractor" [ref=e506]
+                    - text: Protractor
+                  - generic [ref=e507] [cursor=pointer]:
+                    - checkbox "Selenium Webdriver" [ref=e508]
+                    - text: Selenium Webdriver
+                - generic [ref=e509]:
+                  - generic [ref=e510]:
+                    - generic [ref=e511]: name
+                    - text: =tools
+                  - generic [ref=e512]:
+                    - generic [ref=e513]: data-testid
+                    - text: =tool-uft / tool-protractor / tool-selenium
+              - generic [ref=e514]:
+                - generic [ref=e515]: Continents you have worked from
+                - generic "Continents" [ref=e516]:
+                  - generic [ref=e517] [cursor=pointer]:
+                    - checkbox "Asia" [ref=e518]
+                    - text: Asia
+                  - generic [ref=e519] [cursor=pointer]:
+                    - checkbox "Europe" [ref=e520]
+                    - text: Europe
+                  - generic [ref=e521] [cursor=pointer]:
+                    - checkbox "Africa" [ref=e522]
+                    - text: Africa
+                  - generic [ref=e523] [cursor=pointer]:
+                    - checkbox "Australia" [ref=e524]
+                    - text: Australia
+                  - generic [ref=e525] [cursor=pointer]:
+                    - checkbox "South America" [ref=e526]
+                    - text: South America
+                  - generic [ref=e527] [cursor=pointer]:
+                    - checkbox "North America" [ref=e528]
+                    - text: North America
+                  - generic [ref=e529] [cursor=pointer]:
+                    - checkbox "Antarctica" [ref=e530]
+                    - text: Antarctica
+                - generic [ref=e531]:
+                  - generic [ref=e532]:
+                    - generic [ref=e533]: name
+                    - text: =continents
+                  - generic [ref=e534]:
+                    - generic [ref=e535]: data-testid
+                    - text: "=continent-{name}"
+            - generic [ref=e536]:
+              - heading "Selenium commands" [level=2] [ref=e537]
+              - tablist [ref=e538]:
+                - tab "Browser Commands" [ref=e539] [cursor=pointer]
+                - tab "Navigation Commands" [ref=e540] [cursor=pointer]
+                - tab "Switch Commands" [ref=e541] [cursor=pointer]
+                - tab "Wait Commands" [ref=e542] [cursor=pointer]
+                - tab "WebElement Commands" [ref=e543] [cursor=pointer]
+              - generic [ref=e544]:
+                - strong [ref=e545]: Browser commands
+                - text: — open and close the browser, get titles and URLs, manage windows.
+                - code [ref=e546]: driver.getTitle(); driver.getCurrentUrl(); driver.close();
+              - generic [ref=e547]:
+                - generic [ref=e548]:
+                  - generic [ref=e549]: id
+                  - text: =selenium-tabs · selenium-tab-panel
+                - generic [ref=e550]:
+                  - generic [ref=e551]: data-testid
+                  - text: =tab-browser / tab-navigation / tab-switch / tab-wait / tab-webelement
+                - generic [ref=e552]:
+                  - generic [ref=e553]: role
+                  - text: =tab
+            - generic [ref=e554]:
+              - heading "File operations" [level=2] [ref=e555]
+              - generic [ref=e556]:
+                - generic [ref=e557] [cursor=pointer]:
+                  - img [ref=e558]
+                  - text: Upload Image
+                  - button "Upload Image" [ref=e560]
+                - generic [ref=e561]: No file chosen
+                - link "Download file" [ref=e562] [cursor=pointer]:
+                  - /url: /playwright/sample-download.txt
+                  - text: Download file
+                  - img [ref=e563]
+              - generic [ref=e565]:
+                - generic [ref=e566]:
+                  - generic [ref=e567]: id
+                  - text: =upload-image · download-file
+                - generic [ref=e568]:
+                  - generic [ref=e569]: data-testid
+                  - text: =upload-image · download-file
+            - generic [ref=e570]:
+              - button "Save profile" [ref=e571] [cursor=pointer]
+              - button "Reset" [ref=e572] [cursor=pointer]
+              - button "Button" [ref=e573] [cursor=pointer]
+            - generic [ref=e574]:
+              - generic [ref=e575]:
+                - generic [ref=e576]: id
+                - text: =profile-submit · profile-button
+              - generic [ref=e577]:
+                - generic [ref=e578]: data-testid
+                - text: =profile-submit / profile-reset / profile-button
+              - generic [ref=e579]:
+                - generic [ref=e580]: role
+                - text: =button
+            - generic [ref=e581]: Submitted profile JSON will appear here.
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test';
+  2  | import { faker } from '@faker-js/faker';
+  3  | 
+  4  | function generateUser(){
+  5  |     return{
+  6  |         firstName:faker.person.firstName(),
+  7  |         lastName:faker.person.lastName(),
+  8  |         email: faker.internet.email({ firstName: 'Auto' }),
+  9  |         telephone: faker.phone.number({ style: 'national' }),
+  10 |         password: faker.internet.password({ length: 20, memorable: true, pattern: /[A-Z]/, prefix: 'Auto ' }),
+  11 | 
+  12 |     };
+  13 | }
+  14 | 
+  15 | test(`Register single user via generateUser()`, async ({ page }) => {
+  16 |     const user = generateUser();
+  17 | 
+  18 |     await page.goto('https://app.thetestingacademy.com/playwright/tables/practice.html');
+  19 |     await page.getByRole('textbox', { name: 'First Name' }).fill(user.firstName);
+  20 |     await page.getByRole('textbox', { name: 'Last Name' }).fill(user.lastName);
+> 21 |     await page.getByRole('textbox', { name: 'Email' }).fill(user.email);
+     |                                                        ^ Error: locator.fill: Test timeout of 30000ms exceeded.
+  22 |     await page.getByRole('textbox', { name: 'Password' }).first().fill(user.password);
+  23 |     await page.getByRole('button', { name: 'Save profile' }).click();
+  24 |     await expect(page.locator('#submission-output')).toContainText(user.firstName);
+  25 | });
+```

@@ -1,0 +1,6 @@
+[
+  locator('svg').first(),
+  locator('svg').nth(1),
+  locator('svg').nth(2),
+  locator('svg').nth(3)
+]
